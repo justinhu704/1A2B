@@ -9,12 +9,12 @@ for i in range(4):
     answer+=str(items[i])
 while(True):
     c+=1
-    number=input('Enter the number: ')
+    number=input('Please enter the number: ')
     if not number.isdigit():  #cheak all input is digit
         pass
     else:
         if number==answer:
-            print('excellent you guess the correct number')
+            print('You guess the correct number')
             if c < 2:
                 print('You use', c, 'time.')
             else:
@@ -26,7 +26,7 @@ while(True):
                     a_count+=1
                 elif number[i]==answer[j]:
                     b_count+=1
-        print('{a_count}A{b_count}B')
+        print('{0}A{1}B.format(a_count, b_count')
         a_count=0
         b_count=0
     if c < 2:
