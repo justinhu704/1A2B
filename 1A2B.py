@@ -2,15 +2,15 @@ import random
 items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 random.shuffle(items)
 answer=''
-a_count=0 # initial A count
-b_count=0 # initial B count
+a_count=0 
+b_count=0 
 c = 0
 for i in range(4):
     answer+=str(items[i])
 while(True):
     c+=1
     number=input('Please enter the number: ')
-    if not number.isdigit():  #cheak all input is digit
+    if not number.isdigit():
         pass
     else:
         if number==answer:
