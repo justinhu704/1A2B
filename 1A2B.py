@@ -26,7 +26,7 @@ while(True):
                     a_count+=1
                 elif number[i]==answer[j]:
                     b_count+=1
-        print('{0}A{1}B.format(a_count, b_count')
+        print('{0}A{1}B'.format(a_count, b_count)
         a_count=0
         b_count=0
     if c < 2:
